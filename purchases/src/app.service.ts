@@ -1,8 +1,11 @@
 import { Injectable } from '@nestjs/common';
+import { MessageProps } from './app.controller';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  getHello(): MessageProps {
+    return {
+      message: 'Hello World! world war 2',
+    };
   }
 }
